@@ -188,3 +188,12 @@ main .content4 .right button {
   border-radius: 0.5rem;
   cursor: pointer;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--dark);
+  color: var(--hero-color);
+}
