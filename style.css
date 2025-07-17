@@ -153,3 +153,38 @@ main .content3 cite {
   justify-content: right;
   padding-right: 2rem;
 }
+
+main .content4 {
+  display: flex;
+  padding: 6rem 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+main .content4 .modal {
+  background-color: var(--light-blue);
+  padding: 2.5rem 6rem;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+main .content4 .left h3{
+  color: var(--hero-color);
+}
+
+main .content4 .left p{
+  color: var(--secondary);
+}
+
+main .content4 .right button {
+  background-color: var(--light-blue);
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.5rem 1.8rem;
+  font-weight: 900;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
