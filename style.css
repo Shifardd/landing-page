@@ -131,3 +131,25 @@ main .content2 p {
   width: 200px;
   text-align: center;
 }
+
+main .content3 {
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+}
+
+main .content3 p {
+  width: 800px;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+main .content3 cite {
+  display: flex;
+  justify-content: right;
+  padding-right: 2rem;
+}
