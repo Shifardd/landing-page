@@ -1,0 +1,235 @@
+:root {
+  --dark: #1F2937;
+  --hero-color: #F9FAF8;
+  --secondary: #E5E7EB;
+  --light-blue: #3882F6;
+}
+
+body {
+  width: 100vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  background-color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--hero-color);
+  font-weight: 900;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+}
+
+header li {
+  list-style-type: none;
+}
+
+header a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+main .content1 {
+  background-color: var(--dark);
+  display: flex;
+  gap: 3rem;
+  padding: 6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .content1 .left {
+  width: 400px;
+  flex: auto;
+}
+
+main .content1 .left h1 {
+  color: var(--hero-color);
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+main .content1 .left p {
+  color: var(--secondary);
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+main .content1 .left button {
+  background-color: var(--light-blue);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+main .content1 .right {
+  flex: auto;
+  width: 200px;
+}
+
+main .content1 .right img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+main .content2 {
+  background-color: #fff;
+  padding: 6rem;
+}
+
+main .content2 h2 {
+  font-size: 2.25rem;
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+main .content2 .infos {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+main .content2 img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid var(--dark);
+  border-radius: 1rem;
+}
+
+main .content2 p {
+  margin-top: 0.8rem;
+  width: 200px;
+  text-align: center;
+}
+
+main .content3 {
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+}
+
+main .content3 p {
+  width: 800px;
+  font-size: 2.25rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+main .content3 cite {
+  display: flex;
+  justify-content: right;
+  padding-right: 2rem;
+}
+
+main .content4 {
+  display: flex;
+  padding: 6rem 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+main .content4 .modal {
+  background-color: var(--light-blue);
+  padding: 2.5rem 6rem;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+main .content4 .left h3{
+  color: var(--hero-color);
+}
+
+main .content4 .left p{
+  color: var(--secondary);
+}
+
+main .content4 .right button {
+  background-color: var(--light-blue);
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.5rem 1.8rem;
+  font-weight: 900;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--dark);
+  color: var(--hero-color);
+}
+
+
+@media (max-width: 1023px) {
+  header {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  header ul {
+    gap: 8px;
+  }
+
+  header li {
+    font-size: 0.8rem;
+  }
+  
+
+  main .content2 .infos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .content2 img {
+    width: 50px;
+    height: 50px;
+  }
+
+  main .content3 p {
+    font-size: 1rem;
+  }
+}
